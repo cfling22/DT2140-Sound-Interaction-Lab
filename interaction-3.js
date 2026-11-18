@@ -56,9 +56,9 @@ function accelerationChange(accx, accy, accz) {
 }
 
 function rotationChange(rotx, roty, rotz) {
-    const tilt = rotz
+    //const tilt = rotz
 
-    const pressure = tilt;
+    //const pressure = tilt;
 
     playAudio(pressure);
 }
