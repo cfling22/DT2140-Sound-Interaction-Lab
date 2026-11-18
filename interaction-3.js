@@ -56,9 +56,9 @@ function accelerationChange(accx, accy, accz) {
 }
 
 function rotationChange(rotx, roty, rotz) {
+    const pressure = rotz
 
-
-    playAudio(rotz);
+    playAudio(pressure);
 }
 
 function mousePressed() {
