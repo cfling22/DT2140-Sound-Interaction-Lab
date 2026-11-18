@@ -60,7 +60,7 @@ function rotationChange(rotx, roty, rotz) {
 
     // const pressure = tilt;
 
-    // playAudio(pressure);
+    playAudio(rotz);
 }
 
 function mousePressed() {
