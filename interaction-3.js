@@ -56,7 +56,7 @@ function accelerationChange(accx, accy, accz) {
 }
 
 function rotationChange(rotx, roty, rotz) {
-    const tilt = Math.min(1, Math.abs(rotz)/180 );
+    const tilt = Math.min(1, Math.abs(rotz) );
 
     const pressure = tilt;
 
