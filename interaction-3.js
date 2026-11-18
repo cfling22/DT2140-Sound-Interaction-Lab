@@ -56,7 +56,9 @@ function accelerationChange(accx, accy, accz) {
 }
 
 function rotationChange(rotx, roty, rotz) {
-    const pressure = rotz
+    const tilt = Math.min(1, Math.abs(rotz)/180 );
+
+    const pressure = tilt;
 
     playAudio(pressure);
 }
