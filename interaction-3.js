@@ -56,11 +56,11 @@ function accelerationChange(accx, accy, accz) {
 }
 
 function rotationChange(rotx, roty, rotz) {
-    const tilt = Math.min(1, Math.abs(rotz)/180 );
+    // const tilt = Math.min(1, Math.abs(rotz)/180 );
 
-    const pressure = tilt;
+    // const pressure = tilt;
 
-    playAudio(pressure);
+    // playAudio(pressure);
 }
 
 function mousePressed() {
