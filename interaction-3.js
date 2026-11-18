@@ -56,15 +56,14 @@ function accelerationChange(accx, accy, accz) {
 }
 
 function rotationChange(rotx, roty, rotz) {
-    // const tilt = Math.min(1, Math.abs(rotz)/180 );
 
-    // const pressure = tilt;
+    const pressure = rotz/360;
 
-    playAudio(rotz);
+    playAudio(pressure);
 }
 
 function mousePressed() {
-    playAudio(mouseX/windowWidth)
+    //playAudio(mouseX/windowWidth)
     // Use this for debugging from the desktop!
 }
 
