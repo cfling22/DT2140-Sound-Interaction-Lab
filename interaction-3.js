@@ -56,6 +56,11 @@ function accelerationChange(accx, accy, accz) {
 }
 
 function rotationChange(rotx, roty, rotz) {
+    const tilt = Math.min(1, Math.abs(rotz) / 60);
+
+    const pressure = tilt * 0.5;
+
+    playAudio(pressure);
 }
 
 function mousePressed() {
@@ -74,7 +79,7 @@ function deviceTurned() {
 function deviceShaken() {
     shaketimer = millis();
     statusLabels[0].style("color", "pink");
-    playAudio();
+    //playAudio();
 }
 
 function getMinMaxParam(address) {
